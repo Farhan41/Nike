@@ -1,0 +1,44 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.logo{
+    padding: 10px;
+    justify-content: space-between;
+}
+.nav-container{
+    background-color: rgb(189, 180, 180);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.logo-container{
+    display: grid;
+    grid-template-columns: 30px 30px;
+    gap: 10px;
+    
+}
+.link-container{
+    display: grid;
+    grid-template-columns: 100px 50px 80px 70px;
+    position: relative;
+    left: 350px;;
+}
+.link{
+    padding: 10px;
+    text-align: center;
+}
+.link-container a{
+    text-decoration: none;
+    color: black;
+}
+.nike-container{
+    display: grid;
+    grid-template-columns: 20% 50% 30% 20%;
+}
+.feature{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
