@@ -3,69 +3,250 @@
     box-sizing: border-box;
     margin: 0;
 }
-.logo{
-    padding: 10px;
-    justify-content: space-between;
-}
-.nav-container{
-    background-color: rgb(189, 180, 180);
-    display: grid;
-    grid-template-columns: 50% 50%;
-    
+body{
+    text-align: center;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #111;
+    background-color: #fff;
+    line-height: 30px;
 }
 
+
+
+
+           /*--Nav--*/
+.nav-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: #c5cac4;
+}
 .logo-container{
     display: grid;
     grid-template-columns: 30px 30px;
-    gap: 10px;
-    
+    padding: 15px;
 }
 .link-container{
     display: grid;
-    grid-template-columns: 100px 50px 80px 70px;
-    position: relative;
-    left: 350px;;
-}
-.link{
-    padding: 10px;
-    text-align: center;
+    grid-template-columns: 100px 50px 70px 60px;
+    justify-content: end;
+    align-content: center;
 }
 .link-container a{
     text-decoration: none;
+    text-align: center;
     color: black;
+    font-size: 15px;
 }
+                /*--Features--*/
+
 .nike-container{
     display: grid;
-    grid-template-columns: 20% 50% 30% 20%;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+}
+
+.nike-logo{
+    padding: 10px;
 }
 .feature{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: 120px 50px 60px 60px 60px 70px;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
 }
-.new{
-    font-size: 20px;
-    
-    text-align: center;
-    padding: 20px;
+.feature div{
+    font-size: 15px;
 }
-.logo3{
-   
-   
+.feature a{
+    text-decoration: none;
+    color: black;
 }
-.search-box{
-    
-}
+
+/*--ICON--*/
+
 .icon{
-  
+    display: grid;
+    grid-template-columns: 50px 50px;
+    justify-content: center;
+    align-content: center;
 }
-.main{
-    width: 100px;
-    padding: 5px;
-    border-radius: 30px;
-    border: 3px solid green;
+
+/*---Search-box---------*/
+
+.container .input{
+	border: 0;
+	outline: none;
+	color: #3f3e3e;
 }
-input{
-    background:transparent;
-    border: 0px;
-    width: 300px;
+
+.search_wrap{
+	width: 200px;
+	/*margin: 38px auto;*/
+    padding: 10px;;
+}
+
+
+
+.search_wrap .search_box{
+	position: relative;
+	width: 250px;
+	height: 60px;
+}
+
+.search_wrap .search_box .input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px;
+	border-radius: 3px;
+	font-size: 15px;
+    color: #3d3d3f;
+}
+
+.search_wrap .search_box .btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 100%;
+	background: #c5cac4;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.search_wrap .search_box .btn:hover{
+	background: #3d3d3f;	
+}
+
+.search_wrap .search_box .btn.btn_common .fas{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #ffffff;
+	font-size: 20px;
+}
+
+
+
+.search_wrap.search_wrap_4 .search_box .input{
+	padding-left: 80px;
+}
+
+
+.search_wrap.search_wrap_4 .search_box .input
+{
+	border-radius: 50px;
+}
+
+
+
+.search_wrap.search_wrap_4 .search_box .btn{
+	left: 0px;
+	border-radius: 50%;
+}
+
+/*--joinnow---*/
+
+.container_join_now{
+    display: grid;
+    grid-template-columns: 500px ;
+    background-color: #c5cac4 ;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.container_join_now a{
+    color: black;
+}
+
+.container_join_now .text01 {
+    font-size: 17px;
+}
+
+/* section */
+#section-1 img{
+    
+        display: block;         
+        width: 100%;
+        height: auto;
+
+}
+
+/*--section-a-----*/
+
+#section-a h1{
+    font-weight:700;
+    font-size: 30px;
+
+}
+#section-a a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+#section-a{
+    padding-top: 30px;
+    height: 200px;
+}
+#section-a .btn{
+    background: rgb(0, 0, 0);
+    padding: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    position: relative;
+    top: 20px;
+}
+
+/*--section-b-----*/
+
+.content-wrap-grid{
+    
+   display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+   
+}
+
+.boxes{
+    position: relative;
+} 
+.position{
+position: absolute;
+bottom: 50px;
+left: 60px;
+}
+.position .btn svg{
+    position: relative;
+    top: 6px;
+    right: 5px;
+}
+
+#section-b h1{ 
+    padding: 25px;
+    text-align: left;
+}
+
+#section-b .btn{
+    
+    bottom: 100px;
+    background: rgb(255, 255, 255);
+    padding-left: 15px;
+    padding-right:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#section-b .btn:hover{
+    background: rgb(210, 223, 37);
+    color: rgb(255, 255, 255);
 }
