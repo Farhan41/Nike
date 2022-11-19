@@ -240,7 +240,7 @@ left: 60px;
     padding-right:15px;
     padding-top:10px;
     padding-bottom:10px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 25px;
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -250,6 +250,48 @@ left: 60px;
 #section-b .btn:hover{
     background: rgb(210, 223, 37);
     color: rgb(255, 255, 255);
+}
+
+/*---Section-c*/
+
+
+#section-c{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+#section-c .tag{
+    grid-column: 1/ span 2;
+    grid-row: 1;
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+}
+#section-c .fa-icon{
+    grid-column: 2/ span 2;
+    grid-row: 1;
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#section-c .fa-icon .btn{
+    border: 1px solid #3d3d3f;
+    padding: 10px;
+    background-color: #3d3d3f;
+    color: white;
+}
+
+#section-c .carousel{
+    grid-column:  span 3;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    gap: 10px;
+    
 }
 
 
