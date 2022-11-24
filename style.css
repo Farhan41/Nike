@@ -9,9 +9,33 @@ body{
     color: #111;
     background-color: #fff;
     line-height: 30px;
+    
+}
+/*--responsive nav--*/
+.responsive{
+    width: 100%;
+    position: fixed;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
 }
 
-
+.responsive .part-1{
+    
+  display: grid;
+  padding-left: 10px;
+    
+}
+.responsive .part-2{
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px ;
+    align-content: center;
+    justify-content: end;
+    padding-right: 15px;
+}
 
 
            /*--Nav--*/
@@ -41,7 +65,7 @@ body{
 
 .nike-container{
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr 1fr; 
 }
 
 .nike-logo{
@@ -157,6 +181,7 @@ body{
     justify-content: center;
     text-align: center;
     padding: 10px;
+    background-color: white;
 
 }
 
@@ -191,8 +216,9 @@ body{
 
 
 #section-a{
-    padding-top: 30px;
+    padding-top: 60px;
     height: 200px;
+    line-height: 40px;
 }
 #section-a .btn{
     background: rgb(0, 0, 0);
@@ -204,7 +230,9 @@ body{
 }
 
 /*--section-b-----*/
-
+#section-b{
+    padding-top: 40px;
+}
 .content-wrap-grid{
     
    display: grid;
@@ -251,11 +279,16 @@ left: 60px;
     background: rgb(210, 223, 37);
     color: rgb(255, 255, 255);
 }
+#section-b img{
+    width:100%;
+ }
+
 
 /*---Section-c*/
 
 
 #section-c{
+    padding-top: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     
@@ -293,10 +326,14 @@ left: 60px;
     gap: 10px;
     
 }
+#section-c img{
+    width:100%;
+ }
 
 /*---Section-d---*/
 
 #section-d{
+    padding-top: 30px ;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 }
@@ -308,7 +345,7 @@ left: 60px;
 #section-d .heading h2{
     line-height: 100px;
     text-align: left;
-    padding-left: 70px;
+    padding-left: 30px;
 }
 
 #section-d .content h4{
@@ -355,6 +392,10 @@ left: 60px;
    padding: 10px;
    
 }
+
+#section-d img{
+    width:100%;
+ }
 
 /*---Section-e---*/
 
@@ -419,21 +460,386 @@ left: 60px;
    padding: 10px;
    
 }
+#section-e img{
+    width:100%;
+ }
+
+/*---section-f--*/
+
+#section-f{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+#section-f .heading{
+    grid-column: span 2;
+    grid-row: 1;
+}
+#section-f .content{
+    grid-column: span 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 10px;
+}
+
+#section-f .heading{
+    text-align: left;
+    padding-left: 70px;
+    line-height: 60px;
+}
+
+#section-f .btn{
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 2px 15px;
+    
+ }
+
+ #section-f .left{
+    position: relative;
+ }
+ #section-f .left p{
+    color: white;
+    position: absolute;
+    bottom: 125px;
+    left: 60px;
+ }
+
+ #section-f .left .btn{
+    position: absolute;
+    bottom: 80px;
+    left: 60px;
+ }
+
+ #section-f .right{
+    position: relative;
+ }
+ #section-f .right p{
+    color: white;
+    position: absolute;
+    bottom: 125px;
+    left: 60px;
+ }
+
+ #section-f .right .btn{
+    position: absolute;
+    bottom: 80px;
+    left: 60px;
+ }
+ #section-f img{
+    width:100%;
+ }
+
+/*--section-g--*/
+
+#section-g{
+    padding-top: 40px;
+    position: relative;
+}
+
+#section-g .banner{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+#section-g img{ 
+
+    grid-column: 2/3;
+    grid-row: 1;
+}
+#section-g a{
+    grid-column:2/3 ;
+    grid-row: 1;
+}
+
+#section-g .btn{
+    display: flex;
+    flex-direction: row;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 50px;
+    left: 590px;
+
+}
+
+/*---Section-h---*/
+#section-h{
+    padding-top: 40px;
+    
+}
+
+#section-h .banner img{
+    width:100%;  
+}
+#section-h h3{
+    text-align: left;
+   padding-left: 20px;
+   line-height: 80px;
+   
+}
+
+#section-h .content01{
+    padding-top: 30px;
+    line-height: 35px;
+}
+
+#section-h .btn{
+    background: black;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+/*--Section-i--*/
+
+#section-i{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    
+}
+#section-i .heading{
+    grid-column: 2/3;
+    grid-row: 1;
+    text-align: left;
+    padding-left: 30px;
+    line-height: 80px;
+    font-size: 30px;
+}
+#section-i .box p{
+   text-align: left;
+   padding-left: 30px;
+}
+#section-i .box{
+    grid-column: 2/3;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/*--section-j---*/
+#section-j {
+    line-height: 40px;
+    padding-top: 50px;
+    position: relative;
+    
+}
+
+#section-j .content {
+ position: absolute;
+ bottom: 70px;
+ left: 500px;
+ color:rgb(255, 255, 255);
+}
+
+#section-j .content{
+
+}
+
+#section-j .btn{
+    background: rgb(255, 253, 253);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 25px;
+    
+}
+
+/*--section-k---*/
+
+#section-k h1{
+    text-align: left;
+    padding-left: 65px;
+}
+
+
+#section-k {
+    line-height: 50px;
+    padding-top: 50px;
+    position: relative;
+    
+}
+
+#section-k .content {
+ position: absolute;
+ bottom: 70px;
+ left: 150px;
+ color:rgb(255, 255, 255);
+}
+
+#section-k .content h1{
+    padding-right: 60px;
+  }
+
+#section-k .btn{
+    background: rgb(255, 253, 253);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 25px;
+    
+}
+
+/*--section-l--*/
+
+#section-l{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#section-l .box{
+    position: relative;
+}
+
+#section-l .shape{
+   
+   position: absolute;
+   left: 25px;
+   bottom: 30px;
+   text-align: left;
+   font-size: 20px;
+}
+
+/*--Section-M--*/
+
+#section-m{
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto  auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 100px;
+    line-height: 40px;
+}
+#section-m .Featured{
+    grid-column: 2/3;
+}
+#section-m .Shoes{
+    grid-column: 4/5;
+}
+#section-m .Clothing{
+    grid-column: 6/7;
+}
+#section-m .Kids{
+    grid-column: 8/9;
+}
+
+/*--Section-N--*/
+
+#section-n{
+    margin-top: 100px;
+    padding: 25px;
+    background: black;
+    color:#fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: left;
+    
+   
+}
+
+#section-n .Gift{
+    grid-column: 2/3;
+}
+
+#section-n .Help{
+    grid-column: 3/4;
+}
+
+#section-n .About{
+    grid-column: 4/5;
+}
+
+#section-n .icon{
+    grid-column: 5/6;
+}
+
+
+#section-n .icon{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    justify-content: end;
+    align-content: start;
+}
+
+#section-o{
+    background: black;
+    color:#7E7E7E;
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#section-o .part-1 .o{
+    font-size: 15px;
+    color: white;
+}
+#section-o a{
+    text-decoration: none;
+    color:#7E7E7E;
+}
+
+#section-o .part-1{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap:40px;
+}
+#section-o .part-2{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    gap:20px;
+}
+
 
 
 /*--Media-Queries--*/
+@media(min-width: 700px){
+.responsive{
+    display: none;
+}
+}
 
 @media(max-width: 700px){
  
+    .nav-container,
     .nike-container .search-box,
-    .nike-container .icon{
+    .nike-container .icon,
+    .link-container, 
+     #section-b .box-3, 
+    .nike-container
+    
+    {
 
         display:none;
     }
 
-    .link-container{
-        display: none;
+    .container_join_now .text01{
+        font-size: small;
     }
+
 
 }
 
@@ -446,6 +852,127 @@ left: 60px;
         justify-content: center;
         gap: 10px;
     }
+
+   /*--section-g--*/
+
+    #section-g{
+        padding-top: 40px;
+        position: relative;
+    }
+    
+    #section-g .banner{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+    }
+    #section-g img{ 
+    
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+    #section-g a{
+        grid-column:2/3 ;
+        grid-row: 1;
+    }
+    
+    #section-g .btn{
+        display: flex;
+        flex-direction: row;
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border-radius: 25px;
+        width: 180px;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+        position: absolute;
+        bottom: 50px;
+        left: 150px;
+    
+    }
+
+/*--section-j--*/
+
+#section-j .banner{
+    position: relative;
+}
+  #section-j .content{
+    position: absolute;
+    left: 100px;
+    bottom: 70px;
+    width: 300px;
+  }  
+  #section-j h1{
+    font-size: 25px;
+  }
+  #section-j p{
+    font-size: 10px;
+  }
+  #section-j .btn{
+    font-size: 10px;
+  }
+
+  
+  /*--section-k--*/
+
+#section-k .banner{
+    position: relative;
+}
+  #section-k .content{
+    position: absolute;
+    left: 60px;
+    bottom: 70px;
+    text-align: center;
+    
+  }  
+  #section-k .content h1{
+    padding-right: 60px;
+  }
+  #section-k .banner h1{
+    padding-left: 0px;
+    padding-bottom: 10px ;
+  }
+
+  /*--Section-N--*/
+
+#section-n{
+    margin-top: 100px;
+    padding: 25px;
+    background: black;
+    color:#fff;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: left;
+    gap: 20px;
+   
+}
+
+
+
+#section-n{
+    font-size: 10px;
+}
+#section-n .icon{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    justify-content: end;
+    align-content: start;
+}
+
+#section-o{
+    font-size: 8px;
+    
+}
+#section-o .part-1 .o{
+    font-size: 8px;
+}
+#section-o .part-1 .o svg{
+    padding-top: 7px;
+    width: 14px;
+}
+
 }
 
     
